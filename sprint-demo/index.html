@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Live Storytelling public sprint review.">
+    <title>Live Storytelling — Sprint review</title>
+    <style>
+      :root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, sans-serif; background: #07111f; color: #eef4ff; }
+      * { box-sizing: border-box; } body { min-width: 320px; min-height: 100vh; margin: 0; background: radial-gradient(circle at top right, #19345a, transparent 45%), #07111f; }
+      main { width: min(900px, calc(100% - 2rem)); margin: 0 auto; padding: clamp(1.5rem, 5vw, 4rem) 0; } h1, h2 { letter-spacing: -.03em; } h1 { margin: 0; font-size: clamp(2.4rem, 9vw, 5rem); } h2 { margin-top: 0; font-size: 1.2rem; } p, li { color: #c7d5e8; line-height: 1.65; } .hero { padding: 0 0 1.5rem; } .eyebrow { color: #5ee4b8; font-size: .8rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; } .lede { max-width: 60ch; font-size: 1.18rem; } .review-card { margin-top: 1rem; padding: clamp(1.2rem, 3vw, 2rem); border: 1px solid #315174; border-radius: 1.1rem; background: rgba(13, 26, 44, .92); } .error { border-color: #ff8c9d; color: #ffd6dd; } ul { padding-left: 1.25rem; } .button, button { display: inline-block; border: 1px solid #5ee4b8; border-radius: .6rem; padding: .72rem 1rem; background: #5ee4b8; color: #06111d; font: inherit; font-weight: 800; text-decoration: none; cursor: pointer; } button.secondary { border-color: #7999bc; background: transparent; color: #e8f0fb; } fieldset { margin: 1.25rem 0; border: 1px solid #315174; border-radius: .7rem; } legend { padding: 0 .3rem; font-weight: 750; } .choice { display: inline-flex; gap: .45rem; align-items: center; margin: .6rem .9rem .1rem 0; color: #d8e4f3; } .other, .general { display: grid; gap: .45rem; margin-top: 1rem; color: #d8e4f3; font-weight: 700; } input[type="text"], textarea { width: 100%; border: 1px solid #4c6d91; border-radius: .5rem; padding: .65rem; background: #081725; color: #eef4ff; font: inherit; } .actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.25rem; } .muted, .status { font-size: .93rem; } .status { min-height: 1.5rem; color: #8aeac8; } .copy-fallback { margin-top: .75rem; } @media (max-width: 520px) { .actions > * { width: 100%; text-align: center; } }
+    </style>
+  </head>
+  <body>
+    <main aria-labelledby="sprint-title"><div data-sprint-review><p>Loading public sprint review…</p></div></main>
+    <script type="module" src="../sprint-review.mjs"></script>
+  </body>
+</html>
