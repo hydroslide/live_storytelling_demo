@@ -2,5 +2,77 @@
   "schemaVersion": 1,
   "repository": "hydroslide/live_storytelling",
   "feedbackLabel": "sprint-feedback",
-  "sprints": []
+  "sprints": [
+    {
+      "id": "SPRINT-001",
+      "demoRevision": 1,
+      "state": "current",
+      "theme": "Real speech becomes a visible story",
+      "goal": "Hear a short sample and see its actual transcript become a small visual story.",
+      "whyItMatters": "This connects real speech recognition and AI interpretation to a visible result you can inspect, rather than a prerecorded story.",
+      "narrative": "Start with an empty workspace. One action plays the synthetic sample, sends it through real speech recognition and interpretation, and displays the recognized words beside two to four story cards. The demonstrated run produced two cards from one transcription and one interpretation.",
+      "demonstration": {
+        "label": "Open demonstration",
+        "url": "https://7tig5i6cbzcjjdb6gzyxph5izm0llcqx.lambda-url.us-east-1.on.aws/sprint-001/"
+      },
+      "navigationSteps": [
+        "Select Open demonstration. The workspace starts empty with sample audio controls.",
+        "Select Create story from sample once. Hear the sample while the button is disabled and the result is prepared.",
+        "Wait for the ready message, actual final transcript, and two to four visible story cards. The proof line should show 1 transcription and 1 interpretation.",
+        "Compare the cards with the recognized words. Refresh to return the workspace to empty.",
+        "Return to this review, answer the questions, and use Review and submit on GitHub or Copy feedback."
+      ],
+      "expectedBehavior": [
+        "One click runs the actual speech-to-story path and shows the final transcript beside two to four cards.",
+        "The action is disabled while the request runs; no automatic retry or prerecorded story is substituted.",
+        "Refreshing clears the visible transcript and story."
+      ],
+      "wowPoints": [
+        "The words you just heard become an inspectable transcript and a concise visual story through real services.",
+        "You can compare the AI interpretation directly against what speech recognition actually heard."
+      ],
+      "limitations": [
+        "Only the bundled synthetic sample is supported; there is no microphone, upload, or typed-content input.",
+        "Speech recognition and AI summaries can be wrong. Card wording can vary between runs.",
+        "This is a complete-result demonstration, not incremental streaming cards; processing can take up to five minutes.",
+        "Refresh clears the workspace. There is no correction history or intentional runtime transcript/story storage.",
+        "Amazon Transcribe service-improvement opt-out is unverified. Anthropic processing may be global and standard retention is not zero retention."
+      ],
+      "candidateNextDirection": "Explore incremental story updates during a longer spoken sample, subject to your feedback; this is not a commitment.",
+      "questions": [
+        {
+          "id": "outcome",
+          "prompt": "What should happen after this demonstration?",
+          "choices": [
+            "Continue",
+            "Tweak",
+            "Rework",
+            "Pivot",
+            "Stop",
+            "Other"
+          ]
+        },
+        {
+          "id": "story_value",
+          "prompt": "How useful are the story cards alongside the actual transcript?",
+          "choices": [
+            "Clearly useful",
+            "Useful with changes",
+            "Not useful yet",
+            "Other"
+          ]
+        },
+        {
+          "id": "next_focus",
+          "prompt": "Which possible next direction would be most valuable?",
+          "choices": [
+            "Incremental updates during a longer sample",
+            "Improve clarity of the current cards",
+            "Explore a different experience",
+            "Other"
+          ]
+        }
+      ]
+    }
+  ]
 }
